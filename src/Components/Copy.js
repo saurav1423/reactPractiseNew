@@ -1,5 +1,25 @@
 //some worth looking concept
 
+let a = 5;
+let b = a; // primitive copy
+b = 10; // does not change a
+console.log(a); // 5
+//primitives: number, string, boolean, null, undefined, symbol, bigint
+
+let test = {name: 'john'}
+let test2 = test; // reference copy
+test2.name = 'doe'; // changes test.name as well    
+console.log(test); // {name: 'doe'}
+
+//objects: arrays, functions, objects, dates, maps, sets, etc. 
+
+---------------********************-----------------
+
+//shallow copy vs deep copy
+//shallow copy: copies the first level of properties, but nested objects are still referenced
+//deep copy: copies all levels of properties, creating entirely new objects
+
+
 let obj1 = {a: 1, nested: { b: 2 }};
 
 let ref = obj1; // reference copy
